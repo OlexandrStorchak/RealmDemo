@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.realmdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btnAddUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add users" />
+
+    <Button
+        android:id="@+id/btnSaveUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save users"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/user_item_layout"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+</LinearLayout>
